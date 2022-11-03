@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\temp\\curso\\curso_c_collections\\Aula02\\bytebank_ATENDIMENTO_BKP02\\bytebank_ATENDIMENTO\\bytebank_ATENDIMENTO.csproj": {}
+    "C:\\Users\\caioh\\OneDrive\\Documents\\Projetos_Programacao\\ListasC#\\ByteBank_ATENDIMENTO\\bytebank_ATENDIMENTO\\bytebank_ATENDIMENTO.csproj": {}
   },
   "projects": {
-    "C:\\temp\\curso\\curso_c_collections\\Aula02\\bytebank_ATENDIMENTO_BKP02\\bytebank_ATENDIMENTO\\bytebank_ATENDIMENTO.csproj": {
+    "C:\\Users\\caioh\\OneDrive\\Documents\\Projetos_Programacao\\ListasC#\\ByteBank_ATENDIMENTO\\bytebank_ATENDIMENTO\\bytebank_ATENDIMENTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\temp\\curso\\curso_c_collections\\Aula02\\bytebank_ATENDIMENTO_BKP02\\bytebank_ATENDIMENTO\\bytebank_ATENDIMENTO.csproj",
+        "projectUniqueName": "C:\\Users\\caioh\\OneDrive\\Documents\\Projetos_Programacao\\ListasC#\\ByteBank_ATENDIMENTO\\bytebank_ATENDIMENTO\\bytebank_ATENDIMENTO.csproj",
         "projectName": "bytebank_ATENDIMENTO",
-        "projectPath": "C:\\temp\\curso\\curso_c_collections\\Aula02\\bytebank_ATENDIMENTO_BKP02\\bytebank_ATENDIMENTO\\bytebank_ATENDIMENTO.csproj",
-        "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\temp\\curso\\curso_c_collections\\Aula02\\bytebank_ATENDIMENTO_BKP02\\bytebank_ATENDIMENTO\\obj\\",
+        "projectPath": "C:\\Users\\caioh\\OneDrive\\Documents\\Projetos_Programacao\\ListasC#\\ByteBank_ATENDIMENTO\\bytebank_ATENDIMENTO\\bytebank_ATENDIMENTO.csproj",
+        "packagesPath": "C:\\Users\\caioh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\caioh\\OneDrive\\Documents\\Projetos_Programacao\\ListasC#\\ByteBank_ATENDIMENTO\\bytebank_ATENDIMENTO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\caioh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,7 +45,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -54,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

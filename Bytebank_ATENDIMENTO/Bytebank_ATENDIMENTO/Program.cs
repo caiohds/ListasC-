@@ -1,6 +1,7 @@
 ﻿using bytebank.Modelos.Conta;
 using bytebank_ATENDIMENTO.bytebank.Util;
 using System.Collections;
+using System.Security.Cryptography;
 
 Console.WriteLine("Boas Vindas ao ByteBank, Atendimento.");
 
@@ -24,11 +25,11 @@ void TestaArrayInt()
     {
         int idade = idades[i];
         Console.WriteLine($"índice [{i}] = {idade}");
-        acumulador+= idade;
+        acumulador += idade;
     }
 
     int media = acumulador / idades.Length;
-    Console.WriteLine($"Média de idades = {media}") ;
+    Console.WriteLine($"Média de idades = {media}");
 }
 
 void TestaBuscarPalavra()
@@ -37,7 +38,7 @@ void TestaBuscarPalavra()
 
     for (int i = 0; i < arrayDePalavras.Length; i++)
     {
-        Console.Write($"Digite {i+1}ª Palavra: ");
+        Console.Write($"Digite {i + 1}ª Palavra: ");
         arrayDePalavras[i] = Console.ReadLine();
     }
 
@@ -50,7 +51,7 @@ void TestaBuscarPalavra()
         {
             Console.WriteLine($"Palavra encontrada = {busca}.");
             break;
-        }       
+        }
     }
 
 }
@@ -59,22 +60,22 @@ void TestaBuscarPalavra()
 //Array amostra = Array.CreateInstance(typeof(double), 5);
 Array amostra = new double[5];
 amostra.SetValue(5.9, 0);
-amostra.SetValue(1.8,1);
-amostra.SetValue(7.1,2);
-amostra.SetValue(10,3);
-amostra.SetValue(6.9,4);
+amostra.SetValue(1.8, 1);
+amostra.SetValue(7.1, 2);
+amostra.SetValue(10, 3);
+amostra.SetValue(6.9, 4);
 
 ///TestaMediana(amostra);
 
 void TestaMediana(Array array)
 {
-    if ((array==null)|| (array.Length==0))
+    if ((array == null) || (array.Length == 0))
     {
         Console.WriteLine("Array para cálculo da  mediana está vazio ou nulo.");
     }
 
     //Mediana
-    double[] numerosOrdenados = (double [])array.Clone();
+    double[] numerosOrdenados = (double[])array.Clone();
 
     Array.Sort(numerosOrdenados);
     //[1,8][5,9][6,9][7,1][10]
@@ -115,7 +116,12 @@ void TestaArrayDeContasCorrentes()
 //TestaArrayDeContasCorrentes();
 #endregion
 
-ArrayList _listaDeContas = new ArrayList();
+List<ContaCorrente> _listaDeContas = new List<ContaCorrente>()
+{
+    new ContaCorrente (95,"123456-X"){Saldo = 100},
+    new ContaCorrente (95,"951258-X"){Saldo = 200},
+    new ContaCorrente (94,"987321-W"){Saldo = 60}
+};
 
 AtendimentoCliente();
 void AtendimentoCliente()
@@ -171,6 +177,7 @@ void ListarContas()
         Console.WriteLine("Titular da Conta: " + item.Titular.Nome);
         Console.WriteLine("CPF do Titular  : " + item.Titular.Cpf);
         Console.WriteLine("Profissão do Titular: " + item.Titular.Profissao);
+        Console.WriteLine("Saldo : " + item.Saldo);
         Console.WriteLine(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
         Console.ReadKey();
     }
@@ -209,3 +216,31 @@ void CadastrarConta()
     Console.WriteLine("... Conta cadastrada com sucesso! ...");
     Console.ReadKey();
 }
+List<ContaCorrente> _listaDeContas2 = new List<ContaCorrente>()
+{
+    new ContaCorrente(874,"5679787-A"),
+    new ContaCorrente(874,"4456668-B"),
+    new ContaCorrente(874,"7781438-C")
+};
+List<ContaCorrente> _listaDeContas3 = new List<ContaCorrente>()
+{
+    new ContaCorrente(951,"5679787-E"),
+    new ContaCorrente(321,"4456668-F"),
+    new ContaCorrente(719,"7781438-G")
+};
+_listaDeContas2.AddRange(_listaDeContas3);
+_listaDeContas2.Reverse();
+
+foreach (ContaCorrente item in _listaDeContas2)
+{
+
+    Console.WriteLine("Número da Conta : " + item.Conta);
+}
+//var range = _listaDeContas3.GetRange(0, 1);
+//Console.WriteLine("-----------------------------------------------------------------");
+//foreach (var item in range)
+//{
+
+//    Console.WriteLine(item.Conta);
+//}
+
