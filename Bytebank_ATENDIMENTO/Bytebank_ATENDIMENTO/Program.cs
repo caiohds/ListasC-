@@ -216,31 +216,32 @@ void CadastrarConta()
     Console.WriteLine("... Conta cadastrada com sucesso! ...");
     Console.ReadKey();
 }
-List<ContaCorrente> _listaDeContas2 = new List<ContaCorrente>()
-{
-    new ContaCorrente(874,"5679787-A"),
-    new ContaCorrente(874,"4456668-B"),
-    new ContaCorrente(874,"7781438-C")
-};
-List<ContaCorrente> _listaDeContas3 = new List<ContaCorrente>()
-{
-    new ContaCorrente(951,"5679787-E"),
-    new ContaCorrente(321,"4456668-F"),
-    new ContaCorrente(719,"7781438-G")
-};
-_listaDeContas2.AddRange(_listaDeContas3);
-_listaDeContas2.Reverse();
+#region Exemplos de Uso do List
+//List<ContaCorrente> _listaDeContas2 = new List<ContaCorrente>()
+//{
+//    new ContaCorrente(874,"5679787-A"),
+//    new ContaCorrente(874,"4456668-B"),
+//    new ContaCorrente(874,"7781438-C")
+//};
+//List<ContaCorrente> _listaDeContas3 = new List<ContaCorrente>()
+//{
+//    new ContaCorrente(951,"5679787-E"),
+//    new ContaCorrente(321,"4456668-F"),
+//    new ContaCorrente(719,"7781438-G")
+//};
+//_listaDeContas2.AddRange(_listaDeContas3);
+//_listaDeContas2.Reverse();
 
-foreach (ContaCorrente item in _listaDeContas2)
-{
-
-    Console.WriteLine("Número da Conta : " + item.Conta);
-}
-//var range = _listaDeContas3.GetRange(0, 1);
-//Console.WriteLine("-----------------------------------------------------------------");
-//foreach (var item in range)
+//foreach (ContaCorrente item in _listaDeContas2)
 //{
 
-//    Console.WriteLine(item.Conta);
+//    Console.WriteLine("Número da Conta : " + item.Conta);
 //}
+////var range = _listaDeContas3.GetRange(0, 1);
+////Console.WriteLine("-----------------------------------------------------------------");
+////foreach (var item in range)
+////{
 
+////    Console.WriteLine(item.Conta);
+////}
+#endregion
